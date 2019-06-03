@@ -1,23 +1,13 @@
-var add = function(number1, number2) {
-  return number1 + number2;
+var gallonLiter = function(number1) {
+  return number1 * 3.785412;
 };
 
-var subtract = function(number1, number2) {
-  return number1 - number2;
+var tablespoonMilligram = function(number2) {
+  return number2 * 14.786765;
 }
 
-var multiply = function(number1, number2) {
-  return number1 * number2;
-}
+var number1 = parseInt(prompt('Enter how many gallons of fluid:'));
+var number2 = parseInt(prompt('Enter how many tablespoons of dry ingredients:'));
 
-var divide = function(number1, number2) {
-  return number1 / number2;
-}
-
-var number1 = parseInt(prompt('Enter a number:'));
-var number2 = parseInt(prompt('Enter a second number:'));
-
-alert(add(number1, number2));
-alert(subtract(number1, number2));
-alert(multiply(number1, number2));
-alert(divide(number1, number2));
+alert(number1 + ' gallons of liquid is equal to ' + gallonLiter(number1) + ' liters.');
+alert(number2 + ' teaspoons of dry ingredients is equal to ' + gallonLiter(number2) + ' milligrams.');
